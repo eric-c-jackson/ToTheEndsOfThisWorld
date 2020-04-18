@@ -23,9 +23,37 @@
     <script defer type="application/javascript" src="klaro.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700, 500i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="utf-8">
 </head>
 <body>
+    
+    
+    <div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="adventure.html">Adventure</a>
+  <a href="countries.html">Countries</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+    
+    
+    
+    
+    
 
     <div class="indexNav">
         <div class="indexNavWrapper"> 
