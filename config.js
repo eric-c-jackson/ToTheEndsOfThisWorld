@@ -104,7 +104,7 @@ var klaroConfig = {
             // Overwrites global "default" setting.
             // We recommend leaving this to "false" for apps that collect
             // personal information.
-            default: false,
+            default: true,
 
             // The title of you app as listed in the consent modal.
             title: 'Google Analytics',
