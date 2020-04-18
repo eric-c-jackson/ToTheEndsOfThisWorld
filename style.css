@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+h1{
+    font-size: 30px;
+    letter-spacing: -0.5px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.red{
+    color:#ac0000;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.nav{
+    width: 100%;
+}
+
+
+.indexNav{
+    width: 100%;
+}
+
+.navWrapper {
+    width: 80%;
+    margin: 5px 10%;
+    height: 50px;
+}
+
+.indexNavWrapper {
+    width: 80%;
+    margin: 5px 10%;
+    height: 50px;
+}
+
+.navWrapper a{
+    float: left;
+    margin-top 3em;
+    text-decoration: none;
+}
+
+.indexNavWrapper a{
+    float: left;
+    margin-top 3em;
+    text-decoration: none;
+}
+
+.right{
+    float: right;
+}
+
+.menu, .search{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.menu img{
+    margin-right: 10px;
+}
+
+.search img{
+    margin-left: 10px;
+}
+
+.menu p, .search p{
+    color: #65747e;
+    font-size: 26px;
+}
+
+.menu{
+    margin-left: 50px;
+}
+
+.search{
+    margin-right: 50px
+}
+
+/* ----------------------------------------Image---------------------------------------- */
+
+.imageSection{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.imageSectionWrapper{
+    display: block;
+}
+
+.countriesImageSectionWrapper{
+    display: block;
+    width: 100%;
+    margin: 50px auto;
+}
+
+
+/* ----------------------------------------Index Image---------------------------------------- */
+.indexImageSectionTextOverlay{
+    position: absolute;
+    top: 0;
+    width: 40%;
+    margin: 20% 0 0 50%;
+    
+}
+
+.indexImageSectionTextOverlay h1{
+    color: white;
+    background:rgba(0,0,0,0.6);
+    padding: 100px;
+    font-size: 20px;
+    line-height: 33px; /* 4px +25px + 4px */
+    font-weight: 100;
+    text-align: center;
+    border: px solid #fff;
+}
+
+.indexImageSectionText {
+    position: relative;
+    top: 0;
+    width: 50%;
+}
+
+.indexImageSectionText h1{
+    color: black;
+    padding: 100px;
+    font-size: 30px;
+}
+
+.indexImage{
+    width: 80%;
+    margin: auto;
+        position: relative;
+}
+
+.indexImageWrapper img{
+    display: block;
+    width: 100%;
+    
+}
+
+.blogPostTitle{
+    margin: 60px 0px 0px 40px ;
+    
+}
+
+.info{
+    margin: auto;
+    margin: 0px 40px ;
+}
+
+.info p{
+    font-weight: 500;
+    font-style: italic;
+}
+
+.subInfo{
+    padding: 3px 50% 3px 0 ;
+    margin: 20px 0px 10px ;
+    display: flex;
+    border-left: 4px solid #4F4F4F;
+    height: auto;
+    margin-left: 10px;
+    top: 0;
+}
+
+.subInfo p{
+    margin: 0 0 0 20px;
+    font-style: normal;
+    color: 4F4F4F
+}
+
+.articleDate p{
+    margin: 0 0px 0 0px;
+    font-style: normal;
+    font-size: 10;
+    /*border-bottom: 1px solid lightgray;*/
+}
+.articleAuthor p{
+    margin: 2px 0 0 0px;
+    font-style: italic;
+    font-size: 10;
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+}
+
+.contentWrapperText{
+    margin: auto;
+    display: flex;
+    margin: 30
+}
+
+.contentWrapperImage{
+    margin: auto;
+    display: flex;
+}
+
+.mainContentText p{
+    margin: auto;
+    margin: 0px 40px
+}
+
+.mainContentText{
+    flex: 3;
+}
+.mainContentImage{
+    flex: 1;
+}
+
+.sideBar{
+    flex: 1;
+}
+
+
+
+
+
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.indexTopNav {
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.indexTopNav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a{
+  color: #4F4F4F;
+}
+
+.indexTopNav a{
+  color: #4F4F4F;
+}
+
+.topnav a:hover {
+  color: #ac0000;
+}
+
+.indexTopNav a:hover {
+  color: #ac0000;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.indexTopNav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.indexTopNav .search-container {
+  float: right;
+}
+
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.indexTopNav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 6px;
+  margin-right: 16px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.indexTopNav .search-container button {
+  float: right;
+  padding: 6px 6px;
+  margin-right: 16px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.indexTopNav .search-container button:hover {
+  background: #ffffff00;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ffffff00;  
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .indexTopNav .search-container {
+    float: none;
+  }
+  .indexTopNav a, .indexTopNav input[type=text], .indexTopNav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .indexTopNav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/* ---------------------------------------------2x2--------------------------------------------- */
+
+
+.grid2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 6px;
+  background-color: #ffffff;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+}
+
+
+/* ---------------------------------------grid countries---------------------------------------- */
+
+
+.grid-container-countries {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .5em;
+}
+@media (min-width: 52em) {
+  .grid-container-countries {
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+  }
+}
+
+.grid-countries {
+  background: #fff;
+  padding: 5em 0;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+.team-description {
+  grid-column: span 2;
+}
+@media (min-width: 52em) {
+  .team-description {
+    grid-column: auto;
+    grid-row: span 2;
+    align-self: center;
+  }
+}
+
+/* --full country-- */
+.grid-country {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.grid-country img {
+  width: 100%;
+  display: block;
+}
+.grid-country figcaption {
+  position: absolute;
+  top: 1em;
+  bottom: 1em;
+  right: 1em;
+  left: 1em;
+  background: rgba(112, 169, 161, 0.8);
+  color: #0b2027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 300ms;
+}
+.grid-country:hover figcaption {
+  opacity: 1;
+}
+.grid-country .name {
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+/* --Empty Country-- */
+.emptyCountries {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #DD5039;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.emptycountries:hover{
+    background-color: #d33d25;
+    transition: 0.3s;
+}
+
+.emptycountries h1{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 41% 0;
+    font-size: 15px;
+}
+
+
+/* ---------------------------------------Index Grid---------------------------------------- */
+
+
+.grid-container-index {
+    position:relative;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: .5em;
+}
+@media (min-width: 52em) {
+  .grid-container-index {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+}
+
+.grid-index {
+  background: #fff;
+  padding: 5em 0;
+  color: rgba(248, 248, 248, 0.6);
+}
+
+.grid-index-words {
+  grid-column: span 2;
+}
+@media (min-width: 52em) {
+  .grid-index-words {
+    grid-column: span 2;
+    grid-row: span 1;
+    align-self: center;
+  }
+}
+
+.index-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 6em;
+  color: #404040;
+  margin-top: 0;
+  line-height: 1;
+}
+.index-title span {
+  display: block;
+  font-weight: 900;
+}
+
+.grid-index-indiv {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.grid-index-indiv img {
+  width: 100%;
+  display: block;
+}
+
+.grid-index-indiv figcaption {
+  position: absolute;
+  top: 0em;
+  bottom: 0em;
+  right: 0em;
+  left: 0em;
+  background: rgba(0, 0, 0, 0.1);
+  color: #0b2027;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 300ms;
+}
+.grid-index-indiv:hover figcaption {
+  opacity: 1;
+}
+.grid-index-indiv .name {
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+}
+
+
+.grid-index-indiv-title{
+    position: relative;
+      margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.grid-index-indiv-title h1{
+    color: black;
+    font-size: 20px;
+    padding: 20px 1.5em;
+    margin: 20px 0 100px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.grid-index-indiv-country{
+    position: relative;
+      margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.grid-index-indiv-country h2{
+    color: gray;
+    font-weight: 100;
+    font-style: italic;
+    padding: 5px;
+    margin: 50px 0 0 0;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.grid-index-indiv-read{
+    position: absolute;
+    bottom: 0;
+      margin: 0;
+    left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center 
+}
+
+.grid-index-indiv-read h3{
+    color: darkturquoise;
+    font-weight: 100;
+    padding: 5px;
+    margin: 0 0 40px 0 ;
+    font-size: 13px;
+}
+
+/* ---------------------------------------51/195 Countries---------------------------------------- */
+
+.number-of-countries{
+    margin: 100 0 50px 10em;
+    position: relative;
+}
+
+.number-of-countries-number{}
+
+.number-of-countries-number h1{
+    display: inline-block;
+    padding: 0 15px;
+      border: 5px solid #363636;
+    color: #d33d25;
+    font-style: italic;
+    font-size: 12em;
+    font-weight: 100
+}
+
+.number-of-countries-total{
+    position: absolute;
+    top: 40px;
+    left: 300px;
+}
+
+.number-of-countries-total h1{
+    color: #363636;
+    font-size: 70px;
+    font-weight: 30000
+}
+
+.number-of-countries-countries{
+position: absolute;
+    top: 110px;
+    left: 300px;
+}
+
+.number-of-countries-countries h1{
+    color: black;
+    font-size: 70px;
+    font-weight: 300
+}
