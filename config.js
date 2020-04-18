@@ -104,7 +104,7 @@ var klaroConfig = {
             // Overwrites global "default" setting.
             // We recommend leaving this to "false" for apps that collect
             // personal information.
-            default: true,
+            default: false,
 
             // The title of you app as listed in the consent modal.
             title: 'Google Analytics',
@@ -150,7 +150,7 @@ var klaroConfig = {
 
             // If "onlyOnce" is set to true, the app will only be executed
             // once regardless how often the user toggles it on and off.
-            onlyOnce: true,
+            onlyOnce: false,
         },
 
         // The apps will appear in the modal in the same order as defined here.
