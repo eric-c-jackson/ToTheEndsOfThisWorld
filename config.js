@@ -52,6 +52,9 @@ var klaroConfig = {
                 description:
                     'Here you can see and customize the information that we collect about you. Entries marked as "Example" are just for demonstration purposes and are not really used on this website.',
             },
+            google-analytics: {
+                description: 'Tracking website analytics',
+            },
             inlineTracker: {
                 description: 'Example of an inline tracking script',
             },
