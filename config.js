@@ -124,7 +124,7 @@ var klaroConfig = {
                 // is not the current domain. If you do not set these values
                 // properly, the cookie can't be deleted by Klaro
                 // (there is no way to access the path or domain of a cookie in JS)
-                [/^_pk_.*$/, '/', 'klaro.kiprotect.com'], //for the production version
+                [/^_pk_.*$/, '/', 'https://www.googletagmanager.com/gtag/js?id=UA-96216930-2'], //for the production version
                 [/^_pk_.*$/, '/', 'localhost'], //for the local version
                 'piwik_ignore',
             ],
