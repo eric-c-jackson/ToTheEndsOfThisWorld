@@ -44,6 +44,53 @@ var klaroConfig = {
     // replace "decline" with cookie manager modal
     hideDeclineAll: false,
 
+    translations: {
+        // If you erase the "consentModal" translations, Klaro will use the
+        // bundled translations.
+        en: {
+            consentModal: {
+                description:
+                    'Here you can see and customize the information that we collect about you. Entries marked as "Example" are just for demonstration purposes and are not really used on this website.',
+            },
+            inlineTracker: {
+                description: 'Example of an inline tracking script',
+            },
+            externalTracker: {
+                description: 'Example of an external tracking script',
+            },
+            adsense: {
+                description: 'Displaying of advertisements (just an example)',
+            },
+            matomo: {
+                description: 'Collecting of visitor statistics',
+            },
+            camera: {
+                description:
+                    'A surveillance camera (just an example for an IMG tag)',
+            },
+            cloudflare: {
+                description: 'Protection against DDoS attacks',
+            },
+            intercom: {
+                description:
+                    'Chat widget & collecting of visitor statistics (just an example)',
+            },
+            mouseflow: {
+                description: 'Real-Time user analytics (just an example)',
+            },
+            googleFonts: {
+                description: 'Web fonts hosted by Google',
+            },
+            purposes: {
+                analytics: 'Analytics',
+                security: 'Security',
+                livechat: 'Livechat',
+                advertising: 'Advertising',
+                styling: 'Styling',
+            },
+        },
+    },
+    
     // This is a list of third-party apps that Klaro will manage for you.
     apps: [
         {
