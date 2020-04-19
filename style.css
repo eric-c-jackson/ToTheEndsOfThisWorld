@@ -121,24 +121,7 @@ p{
 
 
 /* ----------------------------------------Index Image---------------------------------------- */
-.indexImageSectionTextOverlay{
-    position: absolute;
-    top: 0;
-    width: 40%;
-    margin: 20% 0 0 50%;
-    
-}
 
-.indexImageSectionTextOverlay h1{
-    color: white;
-    background:rgba(0,0,0,0.6);
-    padding: 100px;
-    font-size: 20px;
-    line-height: 33px; /* 4px +25px + 4px */
-    font-weight: 100;
-    text-align: center;
-    border: px solid #fff;
-}
 
 .indexImageSectionText {
     position: relative;
@@ -264,6 +247,8 @@ p{
 
 
 
+
+
 * {box-sizing: border-box;}
 
 
@@ -301,7 +286,7 @@ p{
 
 .grid-countries {
   background: #fff;
-  padding: 5em 0;
+  padding: 5em 0 2em 0;
   color: rgba(248, 248, 248, 0.6);
 }
 
@@ -349,7 +334,7 @@ p{
   text-align: center;
 }
 
-/* --Empty Country-- */
+/* ----------------------------------Empty Country------------------------------------- */
 .emptyCountries {
   margin: 0;
   padding: 0;
@@ -357,12 +342,15 @@ p{
   background-color: #DD5039;
   display: flex;
   align-items: center;
-  justify-content: center 
+  justify-content: center;
+  text-decoration: none;
+  text-decoration: none!important;
 }
 
 .emptycountries:hover{
     background-color: #d33d25;
     transition: 0.3s;
+    text-decoration: none!important;
 }
 
 .emptycountries h1{
@@ -371,6 +359,11 @@ p{
     padding: 10px;
     margin: 41% 0;
     font-size: 15px;
+    text-decoration: none!important;
+}
+
+a:link{
+    text-decoration: none!important;
 }
 
 
@@ -394,7 +387,7 @@ p{
 
 .grid-index {
   background: #fff;
-  padding: 5em 0;
+  padding: 5em 0 0 0;
   color: rgba(248, 248, 248, 0.6);
 }
 
@@ -477,8 +470,8 @@ p{
 .grid-index-indiv-title h1{
     color: black;
     font-size: 20px;
-    padding: 20px 1.5em;
-    margin: 20px 0 100px 0;
+    padding: 5px 1.5em;
+    margin: 0 0 35px 0;
     text-align: center;
     text-transform: capitalize;
 }
@@ -513,7 +506,7 @@ p{
     font-weight: 100;
     font-style: italic;
     padding: 5px;
-    margin: 50px 0 0 0;
+    margin: 15px 0 0 0;
     font-size: 17px;
     text-transform: capitalize;
 }
@@ -713,119 +706,76 @@ position: absolute;
   }
 }
 
-/* ---------------------------------------NAV LIGHT---------------------------------------- */
+/* ---------------------------------------Line Text---------------------------------------- */
 
-.logoLight a{
-  float: left;
-    color: black;
-    text-decoration: none;
+
+.lineText{
+    margin: 100px 0 0 0
+}
+
+.lineText h1 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid grey; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
     text-transform: uppercase;
-    padding: 44px 0px  0px 110px ;
-    margin: 14px 0px;
-    font-size: 23px;
-    font-weight: bold;
+    color: gray
+} 
+
+.lineText span { 
+    background:#fff; 
+    padding:0 10px; 
 }
 
-@media (max-width: 1000px) {
-    .logoLight a{
-        width: 100%;
-        text-align: center;
-        font-size: 4vw;
-        padding: 0px ;
-        margin: 54px 0px 0px 0px;
-  }
-}
 
-.topnavLight {
-  overflow: hidden;
-    padding: 0px 110px 0px 0px ;
-}
-
-.topnavLight a {
-  float: right;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 4px 16px;
-    margin: 54px 0px;
-  text-decoration: none;
-  font-size: 17px;
-    font-weight: bold;
-}
-
-.topnavLight a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: black;
-}
-
-.topnavLight a.activeLight {
-  color: black;
-  border: 1px solid black;
-}
-
-.topnavLight .iconLight {
-  display: none;
-}
-
-@media screen and (max-width: 1000px) {
-  .topnavLight a {display: none;}
-    /*.topnav a:not(:first-child) {display: none;}*/
-  .topnavLight a.iconLight {
-      position: absolute;
-      top: 0.8vw;
-      right:7vw;
-    float: right;
-    display: block;
+/* ---------------------------------------Footer Nav---------------------------------------- */
+.footer{
+    background-color: lightgrey;
     padding: 20px;
-    margin: 34px 0px 0px 0px;
-  }
 }
 
-@media screen and (max-width: 1000px) {
-  .topnavLight.responsiveLight {
-        position: absolute;
-        text-align: center;
-      margin: 120px 0;
-      height: 30vh;
-    }
-  .topnavLight.responsiveLight .iconLight {
-      width: 100;
-      position: absolute;
-      display: inline-block;
-      margin: 0px;
-      padding: 25px;
-      left: 0px;
-      background-color: rgba(0, 0, 0, 0);
-      color: black;
-  }
-  .topnavLight.responsiveLight a {
-      position: relative;
-    float: none;
-    display: block;
-    text-align: left;
-              width: 100vw;
-        text-align: center;
-      font-size: 3vw;
-      margin: 0px;
-      padding: 25px;
-      background-color: rgba(0, 0, 0, .4);
-      color: white;   
-      border: none;
-      text-transform: uppercase;
-      
-  }
-  .topnavLight.responsiveLight a:hover {
-      background-color: rgba(0, 0, 0, .5);
-  }
-    
-  .topnavLight.responsiveLight .iconLight:hover {
-      background-color: rgba(0, 0, 0, 0);
-  }
-    
-      .topnavLight.responsiveLight a:first-child {
-          margin: 100px 0 0 0;
-      
-  }
+.footerNav{
+    width: 80%;
+    margin:auto;
+}
+
+.footerNav a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.footerNav a:hover{
+    background-color: rgba(0, 0, 0, .1);
 }
 
 
+/* ---------------------------------------Privacy Policy---------------------------------------- */
+
+.privacyPolicy{
+    margin: 100px 0;
+}
+
+.privacyPolicy h2{
+    font-weight: 100
+}
+
+.privacyButton{
+    padding: 100px 0 0 0;
+    text-align: center;
+}
+
+.privacyButton a{
+  font-weight: bold;
+  text-transform: uppercase;   
+  font-size: 20px;
+  background-color: rgba(221, 80, 57, .2);
+  border: 1px solid rgba(221, 80, 57, .5);
+  padding: 20px;
+  border-radius: 10px
+}
+
+.privacyButton a:hover{
+  background-color: rgba(221, 80, 57, .3);
+}
